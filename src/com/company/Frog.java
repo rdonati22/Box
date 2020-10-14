@@ -63,7 +63,6 @@ public class Frog {
         return s;
     }
 
-
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Frog f1 = new Frog("Freddy",3,4);	// create an instance of Frog
@@ -74,12 +73,18 @@ public class Frog {
         Frog f2 = new Frog("Francine", -2,0);
         f2.eatFly();
         // TODO uncomment these to test new code.
-        //f2.jump(2);
-        //f1.visit(f2);
+        f2.jump(2);
+        f1.visit(f2);
         System.out.println(f1);
         System.out.println(f2);
 
         // make a new frog named Frank.  have him jump twice and then go visit Freddy.
+        Frog f3 = new Frog("Frank",-3,1 );
+        f3.jump(4);
+        f3.jump(-1);
+        System.out.println(f3);
+        f3.visit(f1);
+        System.out.println(f3);
 
     }
 
