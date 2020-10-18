@@ -63,7 +63,6 @@ public class Fraction {
         return result;
     }
 
-
     public static void main(String[] args) {
         Fraction f1 = new Fraction(3,4);	// create an instance of fraction
         Fraction f2 = new Fraction(4,5);
@@ -83,7 +82,7 @@ public class Fraction {
         System.out.println(f6);
 
 		//create 2 new fractions and add them here.
-        Fraction f7 = new Fraction();
+        Fraction f7 = new Fraction();           //default fraction is 3/5
         Fraction f8 = new Fraction(2,3);
 
         Fraction f9 = f7.add(f8);
